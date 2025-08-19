@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true,
   },
   sassOptions: {
     additionalData: `@use "styles/variables" as *;`,
