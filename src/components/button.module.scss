@@ -1,0 +1,24 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background-color: $primary;
+  color: $primary-foreground;
+}
+
+.secondary {
+  background-color: $secondary;
+  color: $secondary-foreground;
+}
