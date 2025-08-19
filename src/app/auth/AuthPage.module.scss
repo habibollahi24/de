@@ -1,0 +1,25 @@
+.authPageWraper {
+  display: flex;
+
+  .imageContainer {
+    flex: 1;
+    position: relative;
+    height: 100vh;
+    display: none;
+
+    @media screen and (min-width: 800) {
+      display: block;
+    }
+
+    img {
+      object-fit: fill;
+      border-radius: 60px 0 0 60px;
+    }
+  }
+  .formContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

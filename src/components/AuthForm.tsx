@@ -11,7 +11,6 @@ import { formatPhone } from '@/helper/utils';
 
 import Button from '@/components/Button';
 import InputField from '@/components/TextInput';
-import Card from '@/components/Card';
 
 type FormValues = {
   nickName: string;
@@ -73,41 +72,43 @@ export default function AuthForm() {
   };
 
   return (
-    <Card>
-      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-        <h2> ورود</h2>
+   
 
-        <InputField
-          label="نام مستعار"
-          name="nickName"
-          type="text"
-          placeholder=""
-          register={register('nickName')}
-          error={errors.nickName}
-        />
-        <InputField
-          label="ایمیل"
-          name="email"
-          type="email"
-          dir="ltr"
-          placeholder="@"
-          register={register('email')}
-          error={errors.email}
-        />
-        <InputField
-          label="شماره تلفن"
-          name="phoneNumber"
-          type="tel"
-          placeholder="09"
-          register={register('phoneNumber')}
-          error={errors.phoneNumber}
-          onChange={handlePhoneChange}
-        />
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <h2> خوش اومدی:)</h2>
 
-        <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'منتظر بمانید...' : 'ورود'}
-        </Button>
-      </form>
-    </Card>
+      <InputField
+        label="نام مستعار"
+        name="nickName"
+        type="text"
+        placeholder=""
+        register={register('nickName')}
+        error={errors.nickName}
+      />
+      <InputField
+        label="ایمیل"
+        name="email"
+        type="email"
+        dir="ltr"
+        placeholder="@"
+        register={register('email')}
+        error={errors.email}
+      />
+      <InputField
+        label="شماره تلفن"
+        name="phoneNumber"
+        type="tel"
+        placeholder="09"
+        register={register('phoneNumber')}
+        error={errors.phoneNumber}
+        onChange={handlePhoneChange}
+      />
+
+      <Button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? 'منتظر بمانید...' : 'ورود'}
+      </Button>
+    </form>
+
+   
   );
 }

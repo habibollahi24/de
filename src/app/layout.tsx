@@ -37,7 +37,7 @@ export default async function RootLayout({
         <NextTopLoader color="#4a6dff" />
         <UserProvider>
           {/* <Header /> */}
-          <div className="container">{children}</div>
+          <div className="">{children}</div>
         </UserProvider>
       </body>
     </html>
