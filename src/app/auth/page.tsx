@@ -5,7 +5,7 @@ export default function AuthPage() {
   return (
     <div className={styles.authPageWraper}>
       <div className={styles.imageContainer}>
-        <Image src="/elv.jfif" alt="bg" fill priority />
+        <Image src="/elv.jfif" alt="bg" fill priority unoptimized />
       </div>
       <div className={styles.formContainer}>
         <AuthForm />
